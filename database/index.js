@@ -1,5 +1,6 @@
+const loginInfo = require('./mySQLpw.js');
 const {Sequelize} = require('sequelize');
-const orm = new Sequelize('review', 'student', 'student', {dialect: 'mysql'});
+const orm = new Sequelize('review', loginInfo.u, loginInfo.p, {dialect: 'mysql'});
 
 var Reviews = orm.define('reviews', {
   review_id: {
