@@ -25,19 +25,17 @@ var Reviews = orm.define('reviews', {
   create_date: {
     type: Sequelize.DATEONLY,
   },
-  comment: {
-    type: Sequelize.TEXT,
-  },
   category: {
     type: Sequelize.STRING,
+  },
+  comment: {
+    type: Sequelize.TEXT,
   }
 });
 
 var Products = orm.define('products', {
   product_id: {
     type: Sequelize.INTEGER,
-    primaryKey: true,
-    autoIncrement: true,
   },
 });
 
@@ -48,7 +46,7 @@ var Customers = orm.define('customers', {
     autoIncrement: true,
   },
   name: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.STRING,
   }
 });
 
