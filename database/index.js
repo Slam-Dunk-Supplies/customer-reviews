@@ -1,9 +1,11 @@
-const Sequelize = require('sequelize');
-const orm = new Sequelize('review', username, password, {dialect: 'mysql'});
+const {Sequelize} = require('sequelize');
+const orm = new Sequelize('review', 'student', 'student', {dialect: 'mysql'});
 
 var Reviews = orm.define('reviews', {
   review_id: {
     type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
   },
   product_id: {
     type: Sequelize.INTEGER,
@@ -26,44 +28,35 @@ var Reviews = orm.define('reviews', {
   comment: {
     type: Sequelize.TEXT,
   },
-  is_helpful: {
-    type: Sequelize.BOOLEAN,
+  category: {
+    type: Sequelize.STRING,
   }
 });
 
 var Products = orm.define('products', {
   product_id: {
     type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
   },
-  category_id: {
-    type: Sequelize.INTEGER,
-  }
 });
 
 var Customers = orm.define('customers', {
   customer_id: {
     type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
   },
   name: {
     type: Sequelize.INTEGER,
   }
 });
 
-var Categories = orm.define('categories', {
-  category_id: {
-    type: Sequelize.INTEGER,
-  },
-  description: {
-    type: Sequelize.STRING,
-  }
-});
 
-Reviews.sync({force: true});
-Products.sync({force: true});
-Customers.sync({force: true});
-Categories.sync({force: true});
+Reviews.sync();
+Products.sync();
+Customers.sync();
 
 module.exports.Reviews = Reviews;
 module.exports.Products = Products;
 module.exports.Customers = Customers;
-module.exports.Categories = Categories;
