@@ -52,9 +52,13 @@ var Customers = orm.define('customers', {
   }
 });
 
+Customers.hasMany(Reviews, {
+  foreignKey: {
+    name: 'customer_id',
+    allowNull: false
+  }
+});
 // Reviews.belongsTo(Customers, {foreignKey: 'customer_id'});
-// Customers.hasMany(Reviews)
-// Reviews.belongsTo(Products, {foreignKey: 'product_id'});
 
 Products.sync();
 Customers.sync();

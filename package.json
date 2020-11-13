@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js --watch",
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "seed": "node database/seed.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/group2-fec/customer-reviews#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "faker": "^5.1.0",
     "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.6",
