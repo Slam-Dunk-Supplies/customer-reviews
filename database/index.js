@@ -36,6 +36,8 @@ var Reviews = orm.define('reviews', {
 var Products = orm.define('products', {
   product_id: {
     type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true,
   },
 });
 
@@ -50,10 +52,13 @@ var Customers = orm.define('customers', {
   }
 });
 
+// Reviews.belongsTo(Customers, {foreignKey: 'customer_id'});
+// Customers.hasMany(Reviews)
+// Reviews.belongsTo(Products, {foreignKey: 'product_id'});
 
-Reviews.sync();
 Products.sync();
 Customers.sync();
+Reviews.sync();
 
 module.exports.Reviews = Reviews;
 module.exports.Products = Products;
