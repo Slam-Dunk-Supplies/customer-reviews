@@ -65,6 +65,16 @@ Products.sync();
 Customers.sync();
 Reviews.sync();
 
+const getStarDistribution = function(product_id, star_rating) {
+  return Reviews.findAll({
+    where: {product_id: product_id, star_rating: star_rating},
+    attributes: [
+      [orm.fn('COUNT', orm.col('star_rating')), 'n_stars']
+    ]
+  })
+}
+
 module.exports.Reviews = Reviews;
 module.exports.Products = Products;
 module.exports.Customers = Customers;
+module.exports.getStarDistribution = getStarDistribution;
