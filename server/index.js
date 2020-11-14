@@ -1,47 +1,47 @@
-const express = require('express');
-const app = express();
-
 const PORT = 3001;
 const path = require('path');
 const morgan = require('morgan');
-var bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+const express = require('express');
 
-const {Reviews, Customers, getStarDistribution} = require('./../database/index.js');
+const { Reviews, Customers } = require('../database/index.js');
 // const { Sequelize } = require('sequelize/types');
+// getStarDistribution
 
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+const app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(express.static(path.resolve(__dirname, '../client/dist')));
 
-app.get('/api/reviews/:product_id', function(req, res) {
-  let product_id = req.params.product_id;
-  Reviews.findAll({where: {product_id: product_id}})
-  .then((data) => {
-    res.send(data);
-  })
-  .catch((err) => {
-    res.send(err);
-  })
-})
+app.get('/api/reviews/:product_id', (req, res) => {
+  const productId = req.params.product_id;
+  Reviews.findAll({ where: { product_id: productId } })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.send(err);
+    });
+});
 
-app.get('/api/reviews/customer/:customer', function(req, res) {
-  let customer_id = req.params.customer;
+app.get('/api/reviews/customer/:customer', (req, res) => {
+  const customerId = req.params.customer;
   Customers.findAll({
-    where: {customer_id: customer_id},
+    where: { customer_id: customerId },
     include: [
-      {model: Reviews}
-    ]
+      { model: Reviews },
+    ],
   })
-  .then((data) => {
-    res.send(data);
-  })
-  .catch((err) => {
-    res.send(err);
-  })
-})
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.send(err);
+    });
+});
 
-app.get('/api/reviews/distribution', function(req, res) {
+app.get('/api/reviews/distribution', (req, res) => {
   console.log('this is params product_id', req.params.product_id);
   console.log('this is query', req.query);
   console.log('this is body', req.body);
@@ -55,8 +55,8 @@ app.get('/api/reviews/distribution', function(req, res) {
   // .catch((err) => {
   //   res.send(err);
   // })
-})
+});
 
 app.listen(PORT, () => {
-    console.log(`app is running on localhost:${PORT}`);
-})
+  console.log(`app is running on localhost:${PORT}`);
+});
