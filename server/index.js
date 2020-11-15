@@ -45,8 +45,11 @@ app.get('/api/reviews/distribution', (req, res) => {
   console.log('this is params product_id', req.params.product_id);
   console.log('this is query', req.query);
   console.log('this is body', req.body);
-  //
-  res.send(req.query);
+  const { productId, star } = req.query;
+  res.send(productId, star);
+  // only recieved empty array in post man, and don't see any console.log massage
+  // http://localhost:3001/api/reviews/distribution/?productId=1&star=one_stars
+
   // getStarDistribution(req.params.product_id)
   // .then((data) => {
   //   console.log('this is called')
