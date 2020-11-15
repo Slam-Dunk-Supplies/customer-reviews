@@ -35,6 +35,7 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
+    "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
@@ -46,10 +47,11 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "jest": "^26.6.3",
     "puppeteer": "^5.4.1",
+    "react-test-renderer": "^17.0.1",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0"
   },
   "jest": {
-    "setupFilesAfterEnv": ["./node_modules/jest-enzyme/lib/index.js"]
+    "verbose": true
   }
 }
