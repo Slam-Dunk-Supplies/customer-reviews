@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
-/* eslint-disable react/jsx-filename-extension */
 import Enzyme from 'enzyme';
 // import { shallow, mount, render } from 'enzyme';
 // https://enzymejs.github.io/enzyme/docs/installation/index.html
 import Adapter from 'enzyme-adapter-react-16';
+// import { TestScheduler } from 'jest';
 import React from 'react';
 import App from '../client/src/components/App.jsx';
 
@@ -14,6 +14,11 @@ describe('App testing', () => {
     const wrapper = Enzyme.shallow(<App />);
     const text = wrapper.find('div h5');
     expect(text.text()).toBe('Ratings & Reviews');
+  });
+  it('should not render nothing', () => {
+    // const wrapper = Enzyme.shallow(<App />);
+    const wrapper = Enzyme.mount(<App />);
+    expect(wrapper).not.toBeEmptyRender();
   });
 });
 
