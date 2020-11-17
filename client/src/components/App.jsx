@@ -3,6 +3,8 @@
 import React from 'react';
 import axios from 'axios';
 import StarRatingSummary from './StarRatingSummary.jsx';
+import RecommendSummary from './RecommendSummary.jsx';
+import Reviews from './Reviews.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,7 +31,7 @@ class App extends React.Component {
         this.countStarRating(data);
       })
       .catch((err) => {
-        console.log(err);
+        throw err;
       });
   }
 
@@ -54,14 +56,24 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h5 className="heading">Ratings & Reviews</h5>
-        {this.state.reviews.length > 0 && (
-        <StarRatingSummary
-          reviews={this.state.reviews}
-          overallRating={this.state.overallRating}
-          ratingDistribution={this.state.ratingDistribution}
-        />
-        )}
+        <h3 className="heading">RATINGS & REVIEWS</h3>
+        <div className="container">
+          <div className="inner-container">
+            {this.state.reviews.length > 0 && (
+            <StarRatingSummary
+              reviews={this.state.reviews}
+              overallRating={this.state.overallRating}
+              ratingDistribution={this.state.ratingDistribution}
+            />
+            )}
+            {this.state.reviews.length > 0 && (
+            <RecommendSummary />
+            )}
+          </div>
+          {this.state.reviews.length > 0 && (
+          <Reviews />
+          )}
+        </div>
       </div>
     );
   }
