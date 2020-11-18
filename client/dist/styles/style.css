@@ -11,7 +11,7 @@
 }
 
 .item {
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 .reconmmend {
@@ -34,7 +34,7 @@
     width: 600px;
     margin: 10px;
     min-height: 430px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .out-of-5 {
