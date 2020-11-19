@@ -1,3 +1,4 @@
+/* eslint-disable react/sort-comp */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
@@ -11,15 +12,35 @@ class Reviews extends React.Component {
       reviews: [],
       showNum: 2,
       saved: [],
+      clickedRate: null,
     };
     this.updateState = this.updateState.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.moreOrDefault = this.moreOrDefault.bind(this);
     this.pushSavedReviewUp = this.pushSavedReviewUp.bind(this);
+    this.ifClickedRating = this.ifClickedRating.bind(this);
   }
 
   componentDidMount() {
-    this.updateState();
+    this.updateState(); // only run once after page load first time
+  }
+
+  componentDidUpdate() {
+    if (this.state.clickedRate !== this.props.clickedRating) {
+      this.ifClickedRating();
+    }
+  }
+
+  // state change. but on click function on this page
+  ifClickedRating() {
+    if (this.props.clickedRating !== null) {
+      const arr = this.props.reviews;
+      const filterd = arr.filter((review) => review.star_rating === this.props.clickedRating);
+      this.setState({
+        reviews: filterd,
+        clickedRate: this.props.clickedRating,
+      });
+    }
   }
 
   handleClick(e) {
@@ -136,6 +157,8 @@ class Reviews extends React.Component {
 Reviews.propTypes = {
   reviews: PropTypes.array.isRequired,
   distribution: PropTypes.object.isRequired,
+  // eslint-disable-next-line react/require-default-props
+  clickedRating: PropTypes.string,
 };
 
 export default Reviews;

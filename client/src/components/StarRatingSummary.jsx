@@ -19,7 +19,7 @@ class StarRatingSummary extends React.Component {
           </div>
           <div className="out-of-5-sub">
             <div className="out-of-5-2">
-              <Stars ratio={Number(this.props.overallRating)} />
+              <Stars ratio={Number(this.props.overallRating)} id={1} />
             </div>
             <div className="out-of-5-3">
               {`${this.props.reviews.length} Reviews`}
@@ -28,7 +28,10 @@ class StarRatingSummary extends React.Component {
         </div>
         <div className="break-down">
           RATING BREAKDOWN
-          <RatingBreakdown ratingDistribution={this.props.ratingDistribution} />
+          <RatingBreakdown
+            ratingDistribution={this.props.ratingDistribution}
+            clicked={this.props.clicked}
+          />
         </div>
       </div>
     );

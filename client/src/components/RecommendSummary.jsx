@@ -1,25 +1,20 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const RecommendSummary = (props) => {
-  console.log(props);
-  // comfort
-  // quality
-  const toNume = {
-    first: 1, second: 2, third: 3, fourth: 4, fifth: 5,
-  };
   const comfortDistribution = {
     first: 0, second: 0, third: 0, fourth: 0, fifth: 0,
   };
   const qualityDistribution = {
     first: 0, second: 0, third: 0, fourth: 0, fifth: 0,
   };
+  // eslint-disable-next-line array-callback-return
   props.reviews.map((review) => {
     comfortDistribution[review.comfort]++;
     qualityDistribution[review.quality]++;
   });
-  const averageRating = function(distribution) {
-    console.log(distribution.first);
+  const averageRating = function (distribution) {
     let average = (distribution.first * 1
       + distribution.second * 2
       + distribution.third * 3
@@ -28,8 +23,6 @@ const RecommendSummary = (props) => {
     average /= 5;
     return average.toFixed(2);
   };
-  console.log('comfort: ', averageRating(comfortDistribution));
-  console.log('quality: ', averageRating(qualityDistribution));
 
   return (
     <div className="item reconmmend">
@@ -75,6 +68,10 @@ const RecommendSummary = (props) => {
       </div>
     </div>
   );
+};
+
+RecommendSummary.propTypes = {
+  reviews: PropTypes.array.isRequired,
 };
 
 export default RecommendSummary;

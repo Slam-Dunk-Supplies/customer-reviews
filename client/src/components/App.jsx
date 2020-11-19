@@ -14,11 +14,11 @@ class App extends React.Component {
       overallRating: 0,
       ratingDistribution: [],
       reviews: [],
+      clickedRating: null,
     };
     this.fetchReviews = this.fetchReviews.bind(this);
     this.countStarRating = this.countStarRating.bind(this);
-    // shouldn't call funtion here, move it to componentDidmount()
-    // which needs conditional statement to go together
+    this.passClickedRating = this.passClickedRating.bind(this);
   }
 
   componentDidMount() {
@@ -53,6 +53,12 @@ class App extends React.Component {
     });
   }
 
+  passClickedRating(clicked) {
+    this.setState({
+      clickedRating: clicked,
+    });
+  }
+
   render() {
     return (
       <div>
@@ -64,6 +70,7 @@ class App extends React.Component {
               reviews={this.state.reviews}
               overallRating={this.state.overallRating}
               ratingDistribution={this.state.ratingDistribution}
+              clicked={this.passClickedRating}
             />
             )}
             {this.state.reviews.length > 0 && (
@@ -71,7 +78,11 @@ class App extends React.Component {
             )}
           </div>
           {this.state.reviews.length > 0 && (
-          <Reviews reviews={this.state.reviews} distribution={this.state.ratingDistribution} />
+          <Reviews
+            reviews={this.state.reviews}
+            distribution={this.state.ratingDistribution}
+            clickedRating={this.state.clickedRating}
+          />
           )}
           {this.state.reviews.length === 0 && (<div className="test" />)}
         </div>
