@@ -71,8 +71,9 @@ class App extends React.Component {
             )}
           </div>
           {this.state.reviews.length > 0 && (
-          <Reviews reviews={this.state.reviews} />
+          <Reviews reviews={this.state.reviews} distribution={this.state.ratingDistribution} />
           )}
+          {this.state.reviews.length === 0 && (<div className="test" />)}
         </div>
       </div>
     );

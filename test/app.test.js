@@ -1,14 +1,9 @@
 /* eslint-disable no-undef */
 import Enzyme from 'enzyme';
 import axios from 'axios';
-// import { shallow, mount, render } from 'enzyme';
-// https://enzymejs.github.io/enzyme/docs/installation/index.html
-// import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import App from '../client/src/components/App.jsx';
 import Reviews from '../client/src/components/Reviews.jsx';
-
-// Enzyme.configure({ adapter: new Adapter() });
 
 jest.mock('axios');
 
@@ -62,17 +57,33 @@ describe('Testing App.jsx', () => {
     const text = wrapper.find('div h3');
     expect(text.text()).toBe('RATINGS & REVIEWS');
   });
-  test('should render Reviews componenet on screen', () => {
-    axios.get.mockResolvedValueOnce(sampleReviews);
-    ///
-    // const wrapper = Enzyme.shallow(<Reviews reviews={sampleReviews.data} />);
-    // expect(wrapper).toExist();
-    ///
-    // found reviews component render but did app render it????
-    // const wrapper = Enzyme.mount(<App />);
+  // test('should render Reviews componenet on screen', () => {
+  //   axios.get.mockImplementation(() => Promise.resolve(sampleReviews));
+  //   // mockImplementation is replacing
+  //   ///
+  //   // const wrapper = Enzyme.shallow(<Reviews reviews={sampleReviews.data} />);
+  //   // expect(wrapper).toExist();
+  //   ///
+  //   // found reviews component render but did app render it????
+  //   // const wrapper = Enzyme.mount(<App />);
+  //   // It looks like you called `mount()` without a global document being loaded.
+
+  //   const wrapper2 = Enzyme.shallow(<App />);
+  //   // wrapper2.instance().forceUpdate();
+  //   wrapper2.instance().componentDidMount(); // instance() return this
+  //   // wrapper2.instance().countStarRating();
+  //   expect(wrapper2.find(<Reviews reviews={sampleReviews.data} />)).toExist();
+
+  //   // outcome or component name?
+  //   // expect(wrapper2.find('div.detail-reviews')).toExist();
+  //   // toExist() Assert that the given enzyme wrapper has rendered content.
+  // });
+  test('State was not updated ', () => {
+    axios.get.mockImplementation(() => Promise.resolve(sampleReviews));
     const wrapper2 = Enzyme.shallow(<App />);
-    wrapper2.instance();
-    expect(wrapper2.find(Reviews)).toExist();
+    // wrapper2.instance().forceUpdate();
+    wrapper2.instance().componentDidMount(); // instance() return this
+    expect(wrapper2.find('.test')).toExist();
   });
   test('should render App componenet on screen', () => {
     axios.get.mockResolvedValueOnce(sampleReviews);
@@ -87,7 +98,7 @@ describe('Testing App.jsx', () => {
     wrapper.instance().forceUpdate();
     wrapper
       .instance()
-      .componentDidMount();
+      .componentDidMount();// what does this line of code do? what is .instance()
     expect(mock).toHaveBeenCalled();
   });
 });

@@ -1,11 +1,25 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import StarRatings from 'react-star-ratings';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class NewestView extends React.Component {
-  // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props);
+    this.state = {
+      saved: [],
+    };
+    this.saveReview = this.saveReview.bind(this);
+  }
+
+  saveReview(e) {
+    const newR = JSON.parse(e.target.value);
+    const { saved } = this.state;
+    const newSaved = [newR, ...saved];
+    this.setState({
+      saved: newSaved,
+    });
+    this.props.pushUpSaved(newSaved);
   }
 
   render() {
@@ -36,11 +50,24 @@ class NewestView extends React.Component {
             <div className="name">
               <span>{review.customer.name}</span>
             </div>
+            <div className="bookmark">
+              <div>
+                Would you like to save this review?
+              </div>
+              <div>
+                <button className="bookmark-button" type="button" onClick={this.saveReview} value={JSON.stringify(review)}>Yes</button>
+              </div>
+            </div>
           </div>
         ))}
       </div>
     );
   }
 }
+
+NewestView.propTypes = {
+  reviews: PropTypes.array.isRequired,
+  pushUpSaved: PropTypes.func.isRequired,
+};
 
 export default NewestView;

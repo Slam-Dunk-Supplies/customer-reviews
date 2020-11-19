@@ -34,7 +34,7 @@ const sampleReviews = {
       star_rating: 'five_stars',
       comfort: 'first',
       quality: 'second',
-      create_date: '2020-09-21',
+      create_date: '2020-08-21',
       category: 'shoes',
       comment: 'Natus aut soluta qui animi et alias. Aliquid eligendi eligendi provident suscipit. Repudiandae quis possimus autem aspernatur repellendus autem repellendus iusto.',
       createdAt: '2020-11-13T06:03:55.000Z',
@@ -49,9 +49,22 @@ const sampleReviews = {
   ],
 };
 
+const mockEventGenerator = () => {};
+
 describe('Testing reviews.jsx', () => {
-  test('should render buttons', () => {
-    const wrapper = shallow(<Reviews reviews={sampleReviews} />);
+  test('should render 3 buttons', () => {
+    const wrapper = shallow(<Reviews reviews={sampleReviews.data} />);
     expect(wrapper.find('.tab-button')).toHaveLength(3);
+  });
+  test('should invoke handleClick function when a button is invoked', () => {
+    const mockHandleClick = jest.fn();
+    const wrapper = shallow(<Reviews reviews={sampleReviews.data} />);
+    wrapper.instance().handleClick = mockHandleClick;
+    wrapper.instance().forceUpdate();
+    wrapper.find('.top-buttons').simulate('click');
+    expect(mockHandleClick).toHaveBeenCalled();
+  });
+  test('should render the newest review first when the newest button is clicked', () => {
+
   });
 });
