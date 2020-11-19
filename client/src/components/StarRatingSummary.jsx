@@ -31,6 +31,7 @@ class StarRatingSummary extends React.Component {
           <RatingBreakdown
             ratingDistribution={this.props.ratingDistribution}
             clicked={this.props.clicked}
+            totalReviewNum={this.props.reviews.length}
           />
         </div>
       </div>

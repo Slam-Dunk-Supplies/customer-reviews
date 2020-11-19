@@ -124,13 +124,13 @@ class Reviews extends React.Component {
     return (
       <div className="item detail-reviews">
         <div className="top-buttons" onClick={this.handleClick} role="presentation">
-          <div>
+          <div className="tab-button-div">
             <button className="tab-button" type="button" title="NEWEST" value="0">NEWEST</button>
           </div>
-          <div>
+          <div className="tab-button-div">
             <button className="tab-button" type="button" title="SAVED" value="1">SAVED</button>
           </div>
-          <div>
+          <div className="tab-button-div">
             <button className="tab-button" type="button" title="RELEVANT" value="2">RELEVANT</button>
           </div>
         </div>

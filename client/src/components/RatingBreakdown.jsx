@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-operators */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable guard-for-in */
@@ -12,7 +13,6 @@ class RatingBreakdown extends React.Component {
   }
 
   handlClicked(e) {
-    console.log(e.target.value);
     this.props.clicked(e.target.value);
   }
 
@@ -25,8 +25,6 @@ class RatingBreakdown extends React.Component {
     for (const key in ratingDistribution) {
       arr.push([starsCount[key], ratingDistribution[key], key]);
     }
-    console.log(arr);
-
     return (
       <div>
         {arr.map((pair) => (
@@ -34,8 +32,12 @@ class RatingBreakdown extends React.Component {
             {pair[0]}
             <span>&#9733;</span>
             : &nbsp;&nbsp;
+            <svg width="120" height="4">
+              <rect width="120" height="4" style={{ fill: 'lightgrey' }} className="grey-bar" />
+              <rect width={JSON.stringify(pair[1] / this.props.totalReviewNum * 120)} height="4" style={{ fill: '#2ada71' }} className="green-bar" />
+            </svg>
+            &nbsp;&nbsp;
             {pair[1]}
-            &nbsp;Reviews
           </button>
         ))}
       </div>
@@ -46,6 +48,7 @@ class RatingBreakdown extends React.Component {
 RatingBreakdown.propTypes = {
   ratingDistribution: PropTypes.object.isRequired,
   clicked: PropTypes.func.isRequired,
+  totalReviewNum: PropTypes.number.isRequired,
 };
 
 export default RatingBreakdown;
