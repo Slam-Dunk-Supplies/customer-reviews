@@ -33,36 +33,36 @@ const RecommendSummary = (props) => {
         <div>
           <div className="bar">
             <span className="triangle" style={{ marginLeft: averageRating(comfortDistribution) * 150 }}>&#9660;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;</span>
+            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
           </div>
           <div>
             <span className="under-words">POOR</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <span className="under-words">PERFECT</span>
           </div>
         </div>
       </div>
       <h4>
-        QUANLITY
+        QUALITY
       </h4>
       <div>
         <div className="bar">
-          <span className="triangle" style={{ marginLeft: averageRating(qualityDistribution) * 150 }}>&#9660;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;</span>
+          <span className="triangle" style={{ marginLeft: averageRating(qualityDistribution) * 160 }}>&#9660;</span>
+          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
         </div>
         <div>
           <span className="under-words">POOR</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span className="under-words">PERFECT</span>
         </div>
       </div>

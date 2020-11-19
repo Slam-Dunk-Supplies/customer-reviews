@@ -15,14 +15,14 @@
 } */
 
 .reconmmend {
-    width: 200px;
+    width: 250px;
     margin: 10px;
     min-height: 280px;
     flex-shrink: 0;
 }
 
 .ratings {
-    width: 200px;
+    width: 250px;
     margin: 10px;
     min-height: 280px;
     flex-shrink: 0;
@@ -31,9 +31,9 @@
 }
 
 .detail-reviews {
-    width: 600px;
+    width: 700px;
     margin: 10px;
-    min-height: 430px;
+    min-height: 500px;
     /* flex-grow: 1; */
 }
 
@@ -53,7 +53,9 @@
 }
 
 .out-of-5-1 {
-    font-size: x-large;
+    /* font-size: x-large; */
+    font-size: 45px;
+    font-weight: 600;
 }
 
 .top-buttons, .buttom-buttons {

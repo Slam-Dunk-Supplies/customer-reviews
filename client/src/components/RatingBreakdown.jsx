@@ -38,6 +38,8 @@ class RatingBreakdown extends React.Component {
             </svg>
             &nbsp;&nbsp;
             {pair[1]}
+            &nbsp;&nbsp;
+            Reviews
           </button>
         ))}
       </div>
