@@ -1,7 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import StarRatings from 'react-star-ratings';
 import PropTypes from 'prop-types';
+import Stars from './StarScale.jsx';
 
 class NewestView extends React.Component {
   constructor(props) {
@@ -33,12 +33,7 @@ class NewestView extends React.Component {
         {reviews.map((review) => (
           <div className="wrap" key={review.review_id}>
             <div className="stars">
-              <StarRatings
-                rating={starsNums[review.star_rating]}
-                starDimension="15px"
-                starSpacing="2px"
-                starRatedColor="black"
-              />
+              <Stars ratio={starsNums[review.star_rating]} />
             </div>
             <time className="date">{review.create_date}</time>
             <div className="comment-title">

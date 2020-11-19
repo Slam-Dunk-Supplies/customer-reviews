@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import StarRatings from 'react-star-ratings';
 import RatingBreakdown from './RatingBreakdown.jsx';
+import Stars from './StarScale.jsx';
 
 class StarRatingSummary extends React.Component {
   constructor(props) {
@@ -19,12 +19,7 @@ class StarRatingSummary extends React.Component {
           </div>
           <div className="out-of-5-sub">
             <div className="out-of-5-2">
-              <StarRatings
-                rating={Number(this.props.overallRating)}
-                starDimension="15px"
-                starSpacing="2px"
-                starRatedColor="black"
-              />
+              <Stars ratio={Number(this.props.overallRating)} />
             </div>
             <div className="out-of-5-3">
               {`${this.props.reviews.length} Reviews`}

@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      product_id: 1,
+      product_id: 10,
       overallRating: 0,
       ratingDistribution: [],
       reviews: [],
@@ -67,7 +67,7 @@ class App extends React.Component {
             />
             )}
             {this.state.reviews.length > 0 && (
-            <RecommendSummary />
+            <RecommendSummary reviews={this.state.reviews} />
             )}
           </div>
           {this.state.reviews.length > 0 && (

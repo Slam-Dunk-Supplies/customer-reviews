@@ -151,3 +151,24 @@ div.wrap:after {
 .bookmark-button:hover {
     background-color: #2ada71;
 }
+
+.breakdown-button {
+    margin: 2px;
+}
+
+.under-words {
+    font-size: 10px;
+}
+
+.bar {
+    margin: 0px;
+    padding: 0px;
+}
+
+.triangle, .black-star{
+    position: absolute;
+}
+
+.grey-star {
+    position: relative;
+}
