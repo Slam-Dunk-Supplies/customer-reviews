@@ -62,7 +62,7 @@ Customers.hasMany(Reviews, {
     allowNull: false,
   },
 });
-// Reviews.belongsTo(Customers, {foreignKey: 'customer_id'});
+Reviews.belongsTo(Customers, { foreignKey: 'customer_id' });
 
 Products.sync();
 Customers.sync();

@@ -3,20 +3,22 @@
 import React from 'react';
 import axios from 'axios';
 import StarRatingSummary from './StarRatingSummary.jsx';
+import RecommendSummary from './RecommendSummary.jsx';
+import Reviews from './Reviews.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      product_id: 1,
+      product_id: 10,
       overallRating: 0,
       ratingDistribution: [],
       reviews: [],
+      clickedRating: null,
     };
     this.fetchReviews = this.fetchReviews.bind(this);
     this.countStarRating = this.countStarRating.bind(this);
-    // shouldn't call funtion here, move it to componentDidmount()
-    // which needs conditional statement to go together
+    this.passClickedRating = this.passClickedRating.bind(this);
   }
 
   componentDidMount() {
@@ -29,7 +31,7 @@ class App extends React.Component {
         this.countStarRating(data);
       })
       .catch((err) => {
-        console.log(err);
+        throw err;
       });
   }
 
@@ -51,17 +53,39 @@ class App extends React.Component {
     });
   }
 
+  passClickedRating(clicked) {
+    this.setState({
+      clickedRating: clicked,
+    });
+  }
+
   render() {
     return (
       <div>
-        <h5 className="heading">Ratings & Reviews</h5>
-        {this.state.reviews.length > 0 && (
-        <StarRatingSummary
-          reviews={this.state.reviews}
-          overallRating={this.state.overallRating}
-          ratingDistribution={this.state.ratingDistribution}
-        />
-        )}
+        <h3 className="heading">RATINGS & REVIEWS</h3>
+        <div className="container">
+          <div className="inner-container">
+            {this.state.reviews.length > 0 && (
+            <StarRatingSummary
+              reviews={this.state.reviews}
+              overallRating={this.state.overallRating}
+              ratingDistribution={this.state.ratingDistribution}
+              clicked={this.passClickedRating}
+            />
+            )}
+            {this.state.reviews.length > 0 && (
+            <RecommendSummary reviews={this.state.reviews} />
+            )}
+          </div>
+          {this.state.reviews.length > 0 && (
+          <Reviews
+            reviews={this.state.reviews}
+            distribution={this.state.ratingDistribution}
+            clickedRating={this.state.clickedRating}
+          />
+          )}
+          {this.state.reviews.length === 0 && (<div className="test" />)}
+        </div>
       </div>
     );
   }

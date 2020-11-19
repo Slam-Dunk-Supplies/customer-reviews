@@ -23,7 +23,12 @@ app.use(express.static(path.resolve(__dirname, '../client/dist')));
 
 app.get('/api/reviews/:product_id', (req, res) => {
   const productId = req.params.product_id;
-  Reviews.findAll({ where: { product_id: productId } })
+  Reviews.findAll({
+    where: { product_id: productId },
+    include: [
+      { model: Customers },
+    ],
+  })
     .then((data) => {
       // I can count star distribution here and send together with data back to client
       res.send(data);
