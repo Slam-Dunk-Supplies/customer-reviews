@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1605831030853" clover="3.2.0">
-  <project timestamp="1605831030853" name="All files">
+<coverage generated="1605831231036" clover="3.2.0">
+  <project timestamp="1605831231036" name="All files">
     <metrics statements="110" coveredstatements="39" conditionals="34" coveredconditionals="14" methods="34" coveredmethods="13" elements="178" coveredelements="66" complexity="0" loc="110" ncloc="110" packages="1" files="7" classes="7"/>
     <file name="App.jsx" path="/Users/yingguo/gitroot/front-end-capstone/customer-reviews/client/src/components/App.jsx">
       <metrics statements="17" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="6"/>

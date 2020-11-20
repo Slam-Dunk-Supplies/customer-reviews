@@ -13,6 +13,7 @@ class RatingBreakdown extends React.Component {
   }
 
   handlClicked(e) {
+    console.log('this is at ratingbreakdown buttons: ', e.target.value);
     this.props.clicked(e.target.value);
   }
 
@@ -30,9 +31,9 @@ class RatingBreakdown extends React.Component {
         {arr.map((pair) => (
           <button key={pair[0]} type="button" className="breakdown-button" onClick={this.handlClicked} value={pair[2]}>
             {pair[0]}
-            <span>&#9733;</span>
+            <span value={pair[2]}>&#9733;</span>
             : &nbsp;&nbsp;
-            <svg width="120" height="4">
+            <svg width="120" height="4" value={pair[2]}>
               <rect width="120" height="4" style={{ fill: 'lightgrey' }} className="grey-bar" />
               <rect width={JSON.stringify(pair[1] / this.props.totalReviewNum * 120)} height="4" style={{ fill: '#2ada71' }} className="green-bar" />
             </svg>

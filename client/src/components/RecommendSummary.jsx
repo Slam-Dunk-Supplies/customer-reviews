@@ -33,17 +33,25 @@ const RecommendSummary = (props) => {
         <div>
           <div className="bar">
             <span className="triangle" style={{ marginLeft: averageRating(comfortDistribution) * 150 }}>&#9660;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
+          &nbsp;&nbsp;
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
+          &nbsp;&nbsp;
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
+          &nbsp;&nbsp;
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
           </div>
           <div>
             <span className="under-words">POOR</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="under-words">PERFECT</span>
+            <span className="under-words" style={{ marginLeft: 150 }}>PERFECT</span>
           </div>
         </div>
       </div>
@@ -53,17 +61,25 @@ const RecommendSummary = (props) => {
       <div>
         <div className="bar">
           <span className="triangle" style={{ marginLeft: averageRating(qualityDistribution) * 160 }}>&#9660;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
         </div>
         <div>
           <span className="under-words">POOR</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span className="under-words">PERFECT</span>
+          <span className="under-words" style={{ marginLeft: 150 }}>PERFECT</span>
         </div>
       </div>
     </div>
