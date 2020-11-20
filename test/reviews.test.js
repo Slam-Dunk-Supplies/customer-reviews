@@ -49,16 +49,30 @@ const sampleReviews = {
   ],
 };
 
+const sampleDistribution = {
+  five_stars: 1,
+  four_stars: 2,
+  three: 3,
+  two_stars: 1,
+  one_stars: 1,
+};
+
 const mockEventGenerator = () => {};
 
 describe('Testing reviews.jsx', () => {
   test('should render 3 buttons', () => {
-    const wrapper = shallow(<Reviews reviews={sampleReviews.data} />);
+    const wrapper = shallow(<Reviews
+      reviews={sampleReviews.data}
+      distribution={sampleDistribution}
+    />);
     expect(wrapper.find('.tab-button')).toHaveLength(3);
   });
   test('should invoke handleClick function when a button is invoked', () => {
     const mockHandleClick = jest.fn();
-    const wrapper = shallow(<Reviews reviews={sampleReviews.data} />);
+    const wrapper = shallow(<Reviews
+      reviews={sampleReviews.data}
+      distribution={sampleDistribution}
+    />);
     wrapper.instance().handleClick = mockHandleClick;
     wrapper.instance().forceUpdate();
     wrapper.find('.top-buttons').simulate('click');
