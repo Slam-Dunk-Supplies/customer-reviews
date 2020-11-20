@@ -23,7 +23,6 @@ const RecommendSummary = (props) => {
     average /= 5;
     return average.toFixed(2);
   };
-  // style="color: rgb(42, 170, 82)
   return (
     <div className="item reconmmend">
       <div>

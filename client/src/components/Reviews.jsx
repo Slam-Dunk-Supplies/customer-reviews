@@ -22,21 +22,17 @@ class Reviews extends React.Component {
   }
 
   componentDidMount() {
-    this.updateState(); // only run once after page load first time
+    this.updateState();
   }
 
   componentDidUpdate() {
-    console.log('state: ', this.state.clickedRate, 'props: ', this.props.clickedRating);
     if (this.state.clickedRate !== this.props.clickedRating) {
-      console.log('componentDidMount clicked');
       this.ifClickedRating();
     }
   }
 
-  // state change. but on click function on this page
   ifClickedRating() {
     if (this.props.clickedRating !== null || this.props.clickedRating !== undefined) {
-      // what the reason caused undefined?
       const arr = this.props.reviews;
       const filterd = arr.filter((review) => review.star_rating === this.props.clickedRating);
       this.setState({

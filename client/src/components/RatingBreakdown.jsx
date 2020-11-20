@@ -13,7 +13,6 @@ class RatingBreakdown extends React.Component {
   }
 
   handlClicked(e) {
-    console.log('this is at ratingbreakdown buttons: ', e.target.value);
     this.props.clicked(e.target.value);
   }
 
