@@ -22,7 +22,7 @@ class Reviews extends React.Component {
   }
 
   componentDidMount() {
-    this.updateState(); // only run once after page load first time
+    this.updateState();
   }
 
   componentDidUpdate() {
@@ -31,9 +31,8 @@ class Reviews extends React.Component {
     }
   }
 
-  // state change. but on click function on this page
   ifClickedRating() {
-    if (this.props.clickedRating !== null) {
+    if (this.props.clickedRating !== null || this.props.clickedRating !== undefined) {
       const arr = this.props.reviews;
       const filterd = arr.filter((review) => review.star_rating === this.props.clickedRating);
       this.setState({

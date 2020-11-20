@@ -23,7 +23,6 @@ const RecommendSummary = (props) => {
     average /= 5;
     return average.toFixed(2);
   };
-
   return (
     <div className="item reconmmend">
       <div>
@@ -32,18 +31,26 @@ const RecommendSummary = (props) => {
         </h4>
         <div>
           <div className="bar">
-            <span className="triangle" style={{ marginLeft: averageRating(comfortDistribution) * 150 }}>&#9660;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-            <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+            <span className="triangle" style={{ marginLeft: averageRating(comfortDistribution) * 150, color: '#2ada71' }}>&#9660;</span>
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
+          &nbsp;&nbsp;
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
+          &nbsp;&nbsp;
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
+          &nbsp;&nbsp;
+            <svg width="50" height="4">
+              <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+            </svg>
           </div>
           <div>
             <span className="under-words">POOR</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="under-words">PERFECT</span>
+            <span className="under-words" style={{ marginLeft: 150 }}>PERFECT</span>
           </div>
         </div>
       </div>
@@ -52,18 +59,26 @@ const RecommendSummary = (props) => {
       </h4>
       <div>
         <div className="bar">
-          <span className="triangle" style={{ marginLeft: averageRating(qualityDistribution) * 160 }}>&#9660;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
-          <span>&#9149;&#9149;&#9149;&nbsp;&nbsp;</span>
+          <span className="triangle" style={{ marginLeft: averageRating(qualityDistribution) * 160, color: '#2ada71' }}>&#9660;</span>
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
         </div>
         <div>
           <span className="under-words">POOR</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span className="under-words">PERFECT</span>
+          <span className="under-words" style={{ marginLeft: 150 }}>PERFECT</span>
         </div>
       </div>
     </div>
