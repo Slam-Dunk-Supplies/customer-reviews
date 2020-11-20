@@ -23,7 +23,7 @@ const RecommendSummary = (props) => {
     average /= 5;
     return average.toFixed(2);
   };
-
+  // style="color: rgb(42, 170, 82)
   return (
     <div className="item reconmmend">
       <div>
@@ -32,7 +32,7 @@ const RecommendSummary = (props) => {
         </h4>
         <div>
           <div className="bar">
-            <span className="triangle" style={{ marginLeft: averageRating(comfortDistribution) * 150 }}>&#9660;</span>
+            <span className="triangle" style={{ marginLeft: averageRating(comfortDistribution) * 150, color: '#2ada71' }}>&#9660;</span>
             <svg width="50" height="4">
               <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
             </svg>
@@ -60,7 +60,7 @@ const RecommendSummary = (props) => {
       </h4>
       <div>
         <div className="bar">
-          <span className="triangle" style={{ marginLeft: averageRating(qualityDistribution) * 160 }}>&#9660;</span>
+          <span className="triangle" style={{ marginLeft: averageRating(qualityDistribution) * 160, color: '#2ada71' }}>&#9660;</span>
           <svg width="50" height="4">
             <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
           </svg>
