@@ -56,7 +56,6 @@ const Customers = orm.define('customers', {
   },
 });
 
-/*
 Customers.hasMany(Reviews, {
   foreignKey: {
     name: 'customer_id',
@@ -64,7 +63,6 @@ Customers.hasMany(Reviews, {
   },
 });
 Reviews.belongsTo(Customers, { foreignKey: 'customer_id' });
-*/
 
 Products.sync();
 Customers.sync();
