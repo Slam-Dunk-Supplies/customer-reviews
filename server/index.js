@@ -12,14 +12,9 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use('/:id', express.static(path.resolve(__dirname, '../client/dist')));
 
-// app.get('/api/reviews/distribution', (req, res) => {
-//   console.log('this is params', req.params);
-//   console.log('this is query', req.query);
-//   console.log('this is body, empty', req.body);
-//   res.send(req.query);
-//   // only recieved empty array in post man, and don't see any console.log massage
-//   // http://localhost:3001/api/reviews/distribution/?productId=1&star=one_stars
-// });
+app.get('/', (req, res) => {
+  res.redirect(`http://localhost:${PORT}/20/`);
+});
 
 app.get('/api/reviews/:product_id', (req, res) => {
   const productId = req.params.product_id;
