@@ -6,6 +6,28 @@ const { Reviews, Products, Customers } = require('./index.js');
 faker.locale = 'en_US';
 const getRadomInt = (num) => Math.floor(Math.random() * Math.floor(num)) + 1;
 
+const populateFakeDataCustomers = () => {
+  for (let i = 0; i < 20; i++) {
+    Customers.create({
+      name: faker.name.findName(),
+    })
+      .then(() => {
+        console.log('created');
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+};
+
+const populateFakeDataProducts = () => {
+  for (let i = 1; i <= 100; i++) {
+    Products.create({
+      product_id: i,
+    });
+  }
+};
+
 const populateFakeDataReviews = () => {
   const stars = ['one_stars', 'two_stars', 'three_stars', 'four_stars', 'five_stars'];
   const levels = ['first', 'second', 'third', 'fourth', 'fifth'];
@@ -31,28 +53,6 @@ const populateFakeDataReviews = () => {
           console.log(err);
         });
     }
-  }
-};
-
-const populateFakeDataCustomers = () => {
-  for (let i = 0; i < 20; i++) {
-    Customers.create({
-      name: faker.name.findName(),
-    })
-      .then(() => {
-        console.log('created');
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
-};
-
-const populateFakeDataProducts = () => {
-  for (let i = 1; i <= 100; i++) {
-    Products.create({
-      product_id: i,
-    });
   }
 };
 
