@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 app.use('/:id', express.static(path.resolve(__dirname, '../client/dist')));
 
 app.get('/', (req, res) => {
-  res.redirect(`http://localhost:${PORT}/20/`);
+  res.redirect(`http://ec2-18-216-4-88.us-east-2.compute.amazonaws.com:${3001}/20/`);
 });
 
 app.get('/api/reviews/:product_id', (req, res) => {
