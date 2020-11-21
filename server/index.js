@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
-app.use(express.static(path.resolve(__dirname, '../client/dist')));
+app.use('/:id', express.static(path.resolve(__dirname, '../client/dist')));
 
 // app.get('/api/reviews/distribution', (req, res) => {
 //   console.log('this is params', req.params);
