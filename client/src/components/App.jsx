@@ -26,11 +26,13 @@ class App extends React.Component {
   }
 
   fetchReviews() {
+    let id = this.state.product_id;
     if (window.location.pathname !== '/') {
-      let arr = window.location.pathname.split('/');
-      console.log(arr[-1]);
+      const arr = window.location.pathname.split('/');
+      // eslint-disable-next-line prefer-destructuring
+      id = arr[1];
     }
-    axios.get(`/api/reviews/${this.state.product_id}`)
+    axios.get(`/api/reviews/${id}`)
       .then(({ data }) => {
         this.countStarRating(data);
       })
