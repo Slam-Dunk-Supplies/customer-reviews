@@ -9,10 +9,14 @@ const RecommendSummary = (props) => {
   const qualityDistribution = {
     first: 0, second: 0, third: 0, fourth: 0, fifth: 0,
   };
+  const fitDistribution = {
+    first: 0, second: 0, third: 0, fourth: 0, fifth: 0,
+  };
   // eslint-disable-next-line array-callback-return
   props.reviews.map((review) => {
     comfortDistribution[review.comfort]++;
     qualityDistribution[review.quality]++;
+    fitDistribution[review.fitness]++;
   });
   const averageRating = function (distribution) {
     let average = (distribution.first * 1
@@ -79,6 +83,33 @@ const RecommendSummary = (props) => {
         <div>
           <span className="under-words">POOR</span>
           <span className="under-words" style={{ marginLeft: 150 }}>PERFECT</span>
+        </div>
+      </div>
+      <h4>
+        FIT
+      </h4>
+      <div>
+        <div className="bar">
+          <span className="triangle" style={{ marginLeft: averageRating(fitDistribution) * 160, color: '#2ada71' }}>&#9660;</span>
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+          &nbsp;&nbsp;
+          <svg width="50" height="4">
+            <rect width="50" height="4" style={{ fill: 'grey' }} className="grey-bar" />
+          </svg>
+        </div>
+        <div>
+          <span className="under-words">TIGHT</span>
+          <span className="under-words" style={{ marginLeft: 150 }}>LOOSE</span>
         </div>
       </div>
     </div>
