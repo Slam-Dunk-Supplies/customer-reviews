@@ -29,7 +29,6 @@ eval("module.exports = __webpack_require__(/*! ./lib/axios */ \"./node_modules/a
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -43,7 +42,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 50:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -57,7 +55,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -71,7 +68,6 @@ eval("\n\n/**\n * A `Cancel` is an object that is thrown when an operation is ca
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 57:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -85,7 +81,6 @@ eval("\n\nvar Cancel = __webpack_require__(/*! ./Cancel */ \"./node_modules/axio
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -99,7 +94,6 @@ eval("\n\nmodule.exports = function isCancel(value) {\n  return !!(value && valu
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 95:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -113,7 +107,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -127,7 +120,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -141,7 +133,6 @@ eval("\n\nvar isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL *
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -155,7 +146,6 @@ eval("\n\nvar enhanceError = __webpack_require__(/*! ./enhanceError */ \"./node_
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -169,7 +159,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -183,7 +172,6 @@ eval("\n\n/**\n * Update an Error with the specified config, error code, and res
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -197,7 +185,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -211,7 +198,6 @@ eval("\n\nvar createError = __webpack_require__(/*! ./createError */ \"./node_mo
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -225,7 +211,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 98:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -239,7 +224,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -253,7 +237,6 @@ eval("\n\nmodule.exports = function bind(fn, thisArg) {\n  return function wrap(
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -267,7 +250,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 10:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -281,7 +263,6 @@ eval("\n\n/**\n * Creates a new URL by combining the specified URLs\n *\n * @par
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -295,7 +276,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -309,7 +289,6 @@ eval("\n\n/**\n * Determines whether the specified URL is absolute\n *\n * @para
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -323,7 +302,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -337,7 +315,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -351,7 +328,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -365,7 +341,6 @@ eval("\n\n/**\n * Syntactic sugar for invoking a function and expanding an array
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 328:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -444,7 +419,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _NewestView_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NewestView.jsx */ \"./client/src/components/NewestView.jsx\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n/* eslint-disable react/sort-comp */\n\n/* eslint-disable no-restricted-syntax */\n\n/* eslint-disable react/destructuring-assignment */\n\n\n\n\nvar Reviews = /*#__PURE__*/function (_React$Component) {\n  _inherits(Reviews, _React$Component);\n\n  var _super = _createSuper(Reviews);\n\n  function Reviews(props) {\n    var _this;\n\n    _classCallCheck(this, Reviews);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      reviews: [],\n      showNum: 2,\n      saved: [],\n      clickedRate: null\n    };\n    _this.updateState = _this.updateState.bind(_assertThisInitialized(_this));\n    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));\n    _this.moreOrDefault = _this.moreOrDefault.bind(_assertThisInitialized(_this));\n    _this.pushSavedReviewUp = _this.pushSavedReviewUp.bind(_assertThisInitialized(_this));\n    _this.ifClickedRating = _this.ifClickedRating.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(Reviews, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      this.updateState();\n    }\n  }, {\n    key: \"componentDidUpdate\",\n    value: function componentDidUpdate() {\n      if (this.state.clickedRate !== this.props.clickedRating) {\n        this.ifClickedRating();\n      }\n    }\n  }, {\n    key: \"ifClickedRating\",\n    value: function ifClickedRating() {\n      var _this2 = this;\n\n      if (this.props.clickedRating !== null || this.props.clickedRating !== undefined) {\n        var arr = this.props.reviews;\n        var filterd = arr.filter(function (review) {\n          return review.star_rating === _this2.props.clickedRating;\n        });\n        this.setState({\n          reviews: filterd,\n          clickedRate: this.props.clickedRating\n        });\n      }\n    }\n  }, {\n    key: \"handleClick\",\n    value: function handleClick(e) {\n      var arr = this.props.reviews;\n      var distribution = this.props.distribution;\n\n      if (e.target.title === 'NEWEST') {\n        arr.sort(function (a, b) {\n          return Date.parse(b.create_date) - Date.parse(a.create_date);\n        });\n        this.setState({\n          reviews: arr\n        });\n      } else if (e.target.title === 'RELEVANT') {\n        var max = [0, 'star'];\n\n        for (var key in distribution) {\n          if (distribution[key] > max[0]) {\n            max[0] = distribution[key];\n            max[1] = key;\n          }\n        }\n\n        var filterd = arr.filter(function (review) {\n          return review.star_rating === max[1];\n        });\n        this.setState({\n          reviews: filterd\n        });\n      } else if (e.target.title === 'SAVED') {\n        var saved = this.state.saved;\n        this.setState({\n          reviews: saved\n        });\n      }\n    }\n  }, {\n    key: \"moreOrDefault\",\n    value: function moreOrDefault(e) {\n      var totalReviewNum = this.state.reviewsNum;\n\n      if (e.target.title === 'SHOW MORE') {\n        var curretnNum = this.state.showNum;\n\n        if (this.state.showNum < this.state.reviewsNum) {\n          if (this.state.showNum + 5 < this.state.reviewsNum) {\n            this.setState({\n              showNum: curretnNum + 5\n            });\n          }\n        } else {\n          this.setState({\n            showNum: totalReviewNum\n          });\n        }\n      } else if (e.target.title === 'CLOSE') {\n        if (this.state.reviewsNum >= 2) {\n          this.setState({\n            showNum: 2\n          });\n        } else {\n          this.setState({\n            showNum: totalReviewNum\n          });\n        }\n      }\n    }\n  }, {\n    key: \"pushSavedReviewUp\",\n    value: function pushSavedReviewUp(savedArr) {\n      this.setState({\n        saved: savedArr\n      });\n    }\n  }, {\n    key: \"updateState\",\n    value: function updateState() {\n      if (this.props.reviews.length < 2) {\n        this.setState({\n          reviews: this.props.reviews,\n          reviewsNum: this.props.reviews.length,\n          showNum: this.props.reviews.length\n        });\n      } else {\n        this.setState({\n          reviews: this.props.reviews,\n          reviewsNum: this.props.reviews.length\n        });\n      }\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"item detail-reviews\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"top-buttons\",\n        onClick: this.handleClick,\n        role: \"presentation\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"tab-button-div\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"tab-button\",\n        type: \"button\",\n        title: \"NEWEST\",\n        value: \"0\"\n      }, \"NEWEST\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"tab-button-div\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"tab-button\",\n        type: \"button\",\n        title: \"SAVED\",\n        value: \"1\"\n      }, \"SAVED\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"tab-button-div\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"tab-button\",\n        type: \"button\",\n        title: \"RELEVANT\",\n        value: \"2\"\n      }, \"RELEVANT\"))), Object.keys(this.state.reviews).length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NewestView_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n        reviews: this.state.reviews.slice(0, this.state.showNum),\n        pushUpSaved: this.pushSavedReviewUp\n      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"buttom-buttons\",\n        onClick: this.moreOrDefault,\n        role: \"presentation\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"more-reviews\",\n        type: \"button\",\n        title: \"SHOW MORE\"\n      }, \"SHOW MORE\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"default\",\n        type: \"button\",\n        title: \"CLOSE\"\n      }, \"CLOSE\"))));\n    }\n  }]);\n\n  return Reviews;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\nReviews.propTypes = {\n  reviews: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().array.isRequired),\n  distribution: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object.isRequired),\n  // eslint-disable-next-line react/require-default-props\n  clickedRating: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Reviews);\n\n//# sourceURL=webpack://customer-review-service/./client/src/components/Reviews.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _NewestView_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NewestView.jsx */ \"./client/src/components/NewestView.jsx\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n/* eslint-disable react/sort-comp */\n\n/* eslint-disable no-restricted-syntax */\n\n/* eslint-disable react/destructuring-assignment */\n\n\n\n\nvar Reviews = /*#__PURE__*/function (_React$Component) {\n  _inherits(Reviews, _React$Component);\n\n  var _super = _createSuper(Reviews);\n\n  function Reviews(props) {\n    var _this;\n\n    _classCallCheck(this, Reviews);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      reviews: [],\n      showNum: 2,\n      saved: [],\n      clickedRate: null\n    };\n    _this.updateState = _this.updateState.bind(_assertThisInitialized(_this));\n    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));\n    _this.moreOrDefault = _this.moreOrDefault.bind(_assertThisInitialized(_this));\n    _this.pushSavedReviewUp = _this.pushSavedReviewUp.bind(_assertThisInitialized(_this));\n    _this.ifClickedRating = _this.ifClickedRating.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(Reviews, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      this.updateState();\n    }\n  }, {\n    key: \"componentDidUpdate\",\n    value: function componentDidUpdate() {\n      if (this.state.clickedRate !== this.props.clickedRating) {\n        this.ifClickedRating();\n      }\n    }\n  }, {\n    key: \"ifClickedRating\",\n    value: function ifClickedRating() {\n      var _this2 = this;\n\n      if (this.props.clickedRating !== null || this.props.clickedRating !== undefined) {\n        var arr = this.props.reviews;\n        var filterd = arr.filter(function (review) {\n          return review.star_rating === _this2.props.clickedRating;\n        });\n        this.setState({\n          reviews: filterd,\n          clickedRate: this.props.clickedRating\n        });\n      }\n    }\n  }, {\n    key: \"handleClick\",\n    value: function handleClick(e) {\n      var arr = this.props.reviews;\n      var distribution = this.props.distribution;\n\n      if (e.target.title === 'NEWEST') {\n        arr.sort(function (a, b) {\n          return Date.parse(b.create_date) - Date.parse(a.create_date);\n        });\n        this.setState({\n          reviews: arr\n        });\n      } else if (e.target.title === 'RELEVANT') {\n        var max = [0, 'star'];\n\n        for (var key in distribution) {\n          if (distribution[key] > max[0]) {\n            max[0] = distribution[key];\n            max[1] = key;\n          }\n        }\n\n        var filterd = arr.filter(function (review) {\n          return review.star_rating === max[1];\n        });\n        this.setState({\n          reviews: filterd\n        });\n      } else if (e.target.title === 'SAVED') {\n        var saved = this.state.saved;\n        this.setState({\n          reviews: saved\n        });\n      }\n    }\n  }, {\n    key: \"moreOrDefault\",\n    value: function moreOrDefault(e) {\n      var totalReviewNum = this.state.reviewsNum;\n\n      if (e.target.title === 'SHOW MORE') {\n        var curretnNum = this.state.showNum;\n\n        if (this.state.showNum < this.state.reviewsNum) {\n          if (this.state.showNum + 5 < this.state.reviewsNum) {\n            this.setState({\n              showNum: curretnNum + 5\n            });\n          }\n        } else {\n          this.setState({\n            showNum: totalReviewNum\n          });\n        }\n      } else if (e.target.title === 'CLOSE') {\n        if (this.state.reviewsNum >= 2) {\n          this.setState({\n            showNum: 2\n          });\n        } else {\n          this.setState({\n            showNum: totalReviewNum\n          });\n        }\n      }\n    }\n  }, {\n    key: \"pushSavedReviewUp\",\n    value: function pushSavedReviewUp(savedArr) {\n      this.setState({\n        saved: savedArr\n      });\n    }\n  }, {\n    key: \"updateState\",\n    value: function updateState() {\n      if (this.props.reviews.length < 2) {\n        this.setState({\n          reviews: this.props.reviews,\n          reviewsNum: this.props.reviews.length,\n          showNum: this.props.reviews.length\n        });\n      } else {\n        this.setState({\n          reviews: this.props.reviews,\n          reviewsNum: this.props.reviews.length\n        });\n      }\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"item detail-reviews\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"top-buttons\",\n        onClick: this.handleClick,\n        role: \"presentation\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"tab-button-div\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"tab-button\",\n        type: \"button\",\n        title: \"NEWEST\",\n        value: \"0\"\n      }, \"NEWEST\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"tab-button-div\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"tab-button\",\n        type: \"button\",\n        title: \"SAVED\",\n        value: \"1\"\n      }, \"SAVED\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"tab-button-div\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"tab-button\",\n        type: \"button\",\n        title: \"RELEVANT\",\n        value: \"2\"\n      }, \"RELEVANT\"))), Object.keys(this.state.reviews).length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NewestView_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n        reviews: this.state.reviews.slice(0, this.state.showNum),\n        pushUpSaved: this.pushSavedReviewUp\n      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"buttom-buttons\",\n        onClick: this.moreOrDefault,\n        role: \"presentation\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"buttons-more-or-less\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"more-reviews\",\n        type: \"button\",\n        title: \"SHOW MORE\"\n      }, \"SHOW MORE\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"buttons-more-or-less\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n        className: \"default\",\n        type: \"button\",\n        title: \"CLOSE\"\n      }, \"CLOSE\"))));\n    }\n  }]);\n\n  return Reviews;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\nReviews.propTypes = {\n  reviews: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().array.isRequired),\n  distribution: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object.isRequired),\n  // eslint-disable-next-line react/require-default-props\n  clickedRating: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Reviews);\n\n//# sourceURL=webpack://customer-review-service/./client/src/components/Reviews.jsx?");
 
 /***/ }),
 
@@ -498,7 +473,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
   \*********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 65:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -512,7 +486,6 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 102:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -526,7 +499,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 38:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -540,7 +512,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \******************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 14:2-16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (true) {\n  var ReactIs = __webpack_require__(/*! react-is */ \"./node_modules/prop-types/node_modules/react-is/index.js\");\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ \"./node_modules/prop-types/factoryWithTypeCheckers.js\")(ReactIs.isElement, throwOnDirectAccess);\n} else {}\n\n\n//# sourceURL=webpack://customer-review-service/./node_modules/prop-types/index.js?");
@@ -553,7 +524,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -745,16 +715,6 @@ eval("/** @license React v0.19.1\n * scheduler-tracing.development.js\n *\n * Co
 /*! export unstable_wrapCallback [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_exports__ */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 39:26-46 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 132:13-33 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 156:24-44 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 200:15-35 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 555:28-48 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 572:25-45 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 598:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 722:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 810:24-44 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 827:20-40 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";

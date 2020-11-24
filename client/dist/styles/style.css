@@ -61,6 +61,8 @@
 .top-buttons, .buttom-buttons {
     display: flex;
     justify-content: space-around;
+    flex-flow: row nowrap;
+    margin-bottom: 14px;
 }
 
 .heading {
@@ -68,7 +70,8 @@
 }
 
 button {
-    appearance: button;
+    /* appearance: button; */
+    cursor:pointer;
     color: -internal-light-dark(black, white);
     letter-spacing: normal;
     word-spacing: normal;
@@ -83,7 +86,7 @@ button {
     height: 50 px;
     margin-bottom: 14px;
     margin-top: 14px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .date {
@@ -187,5 +190,14 @@ h4 {
     border: 1px solid grey;
     flex-grow: 1;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.buttons-more-or-less {
+    border: 1px solid grey;
+    /* flex-grow: 1; */
+    text-align: center;
+    width: 40%;
+
 }

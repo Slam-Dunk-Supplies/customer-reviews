@@ -141,10 +141,10 @@ class Reviews extends React.Component {
         />
         ) }
         <div className="buttom-buttons" onClick={this.moreOrDefault} role="presentation">
-          <div>
+          <div className="buttons-more-or-less">
             <button className="more-reviews" type="button" title="SHOW MORE">SHOW MORE</button>
           </div>
-          <div>
+          <div className="buttons-more-or-less">
             <button className="default" type="button" title="CLOSE">CLOSE</button>
           </div>
         </div>
