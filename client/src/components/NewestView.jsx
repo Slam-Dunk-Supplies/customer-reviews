@@ -8,18 +8,24 @@ class NewestView extends React.Component {
     super(props);
     this.state = {
       saved: [],
+      savedReviewIds: [],
     };
     this.saveReview = this.saveReview.bind(this);
   }
 
   saveReview(e) {
     const newR = JSON.parse(e.target.value);
-    const { saved } = this.state;
-    const newSaved = [newR, ...saved];
-    this.setState({
-      saved: newSaved,
-    });
-    this.props.pushUpSaved(newSaved);
+    const { saved, savedReviewIds } = this.state;
+    if (savedReviewIds.indexOf(newR.review_id) === -1) {
+      const newSaved = [newR, ...saved];
+      const newSavedIds = [newR.review_id, ...savedReviewIds];
+      this.setState({
+        saved: newSaved,
+        savedReviewIds: newSavedIds,
+      });
+      this.props.pushUpSaved(newSaved);
+    }
+    e.preventDefault();
   }
 
   render() {
@@ -50,7 +56,21 @@ class NewestView extends React.Component {
               </div>
               <div>
                 <button className="bookmark-button" type="button" onClick={this.saveReview} value={JSON.stringify(review)}>Yes</button>
+                {this.state.savedReviewIds.indexOf(review.review_id) > -1 && <span className="saved">Saved!</span>}
               </div>
+            </div>
+            <div className="helpfulOrNot">
+              Was this review helpful?
+              <button type="button" className="bookmark-button">
+                Yes [
+                {review.helpful}
+                ]
+              </button>
+              <button type="button" className="bookmark-button">
+                No [
+                {review.unhelpful}
+                ]
+              </button>
             </div>
           </div>
         ))}

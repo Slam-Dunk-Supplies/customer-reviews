@@ -150,8 +150,8 @@ div.wrap:after {
     display: flex;
     align-items: center;
     align-content: flex-start;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .bookmark-button:hover {
@@ -201,3 +201,13 @@ h4 {
     width: 40%;
 
 }
+
+.saved {
+    color: grey;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+/* .helpfulOrNot {
+    position: relative;
+} */
