@@ -45,6 +45,9 @@ const populateFakeDataReviews = () => {
         create_date: faker.date.past(),
         comment: faker.lorem.sentences(),
         category: categories[getRadomInt(2) - 1],
+        fitness: levels[getRadomInt(5) - 1],
+        helpful: getRadomInt(20),
+        unhelpful: getRadomInt(20),
       })
         .then(() => {
           console.log('created');

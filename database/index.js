@@ -35,6 +35,15 @@ const Reviews = orm.define('reviews', {
   comment: {
     type: Sequelize.TEXT,
   },
+  fitness: {
+    type: Sequelize.STRING,
+  },
+  helpful: {
+    type: Sequelize.INTEGER,
+  },
+  unhelpful: {
+    type: Sequelize.INTEGER,
+  },
 });
 
 const Products = orm.define('products', {
