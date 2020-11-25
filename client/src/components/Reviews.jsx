@@ -138,6 +138,7 @@ class Reviews extends React.Component {
         <NewestView
           reviews={this.state.reviews.slice(0, this.state.showNum)}
           pushUpSaved={this.pushSavedReviewUp}
+          handleHelpfulOrUnhelpful={this.props.handleHelpfulOrUnhelpful}
         />
         ) }
         <div className="buttom-buttons" onClick={this.moreOrDefault} role="presentation">
@@ -158,6 +159,7 @@ Reviews.propTypes = {
   distribution: PropTypes.object.isRequired,
   // eslint-disable-next-line react/require-default-props
   clickedRating: PropTypes.string,
+  handleHelpfulOrUnhelpful: PropTypes.func.isRequired,
 };
 
 export default Reviews;

@@ -1,3 +1,4 @@
+/* eslint-disable react/sort-comp */
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
@@ -19,6 +20,7 @@ class App extends React.Component {
     this.fetchReviews = this.fetchReviews.bind(this);
     this.countStarRating = this.countStarRating.bind(this);
     this.passClickedRating = this.passClickedRating.bind(this);
+    this.handleHelpfulOrUnhelpful = this.handleHelpfulOrUnhelpful.bind(this);
   }
 
   componentDidMount() {
@@ -65,6 +67,19 @@ class App extends React.Component {
     });
   }
 
+  handleHelpfulOrUnhelpful(keyName, reviewId) {
+    for (let i = 0; i < this.state.reviews.length; i++) {
+      if (this.state.reviews[i].review_id === reviewId) {
+        // eslint-disable-next-line react/no-access-state-in-setstate
+        const copyReviews = this.state.reviews.slice();
+        copyReviews[i][keyName]++;
+        this.setState({
+          reviews: copyReviews,
+        });
+      }
+    }
+  }
+
   render() {
     return (
       <div>
@@ -88,6 +103,7 @@ class App extends React.Component {
             reviews={this.state.reviews}
             distribution={this.state.ratingDistribution}
             clickedRating={this.state.clickedRating}
+            handleHelpfulOrUnhelpful={this.handleHelpfulOrUnhelpful}
           />
           )}
           {this.state.reviews.length === 0 && (<div className="test" />)}

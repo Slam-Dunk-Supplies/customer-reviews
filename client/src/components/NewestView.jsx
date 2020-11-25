@@ -1,6 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
+import axios from 'axios';
 import Stars from './StarScale.jsx';
 
 class NewestView extends React.Component {
@@ -11,6 +12,8 @@ class NewestView extends React.Component {
       savedReviewIds: [],
     };
     this.saveReview = this.saveReview.bind(this);
+    this.updateHelpfulNum = this.updateHelpfulNum.bind(this);
+    this.updateUnHelpfulNum = this.updateUnHelpfulNum.bind(this);
   }
 
   saveReview(e) {
@@ -26,6 +29,18 @@ class NewestView extends React.Component {
       this.props.pushUpSaved(newSaved);
     }
     e.preventDefault();
+  }
+
+  updateHelpfulNum(e) {
+    const oldHelpful = JSON.parse(e.target.value);
+    this.props.handleHelpfulOrUnhelpful('helpful', oldHelpful.review_id);
+    axios.put(`/api/reviews/${oldHelpful.review_id}`, { helpful: oldHelpful.helpful + 1 });
+  }
+
+  updateUnHelpfulNum(e) {
+    const oldUnHelpful = JSON.parse(e.target.value);
+    this.props.handleHelpfulOrUnhelpful('unhelpful', oldUnHelpful.review_id);
+    axios.put(`/api/reviews/${oldUnHelpful.review_id}`, { unhelpful: oldUnHelpful.unhelpful + 1 });
   }
 
   render() {
@@ -61,12 +76,12 @@ class NewestView extends React.Component {
             </div>
             <div className="helpfulOrNot">
               Was this review helpful?
-              <button type="button" className="bookmark-button">
+              <button type="button" className="bookmark-button" value={JSON.stringify(review)} onClick={this.updateHelpfulNum}>
                 Yes [
                 {review.helpful}
                 ]
               </button>
-              <button type="button" className="bookmark-button">
+              <button type="button" className="bookmark-button" value={JSON.stringify(review)} onClick={this.updateUnHelpfulNum}>
                 No [
                 {review.unhelpful}
                 ]
@@ -82,6 +97,7 @@ class NewestView extends React.Component {
 NewestView.propTypes = {
   reviews: PropTypes.array.isRequired,
   pushUpSaved: PropTypes.func.isRequired,
+  handleHelpfulOrUnhelpful: PropTypes.func.isRequired,
 };
 
 export default NewestView;

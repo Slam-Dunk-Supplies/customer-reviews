@@ -33,6 +33,21 @@ app.get('/api/reviews/:product_id', (req, res) => {
     });
 });
 
+app.put('/api/reviews/:review_id', (req, res) => {
+  const reviewId = req.params.review_id;
+  Reviews.update(req.body, {
+    where: {
+      review_id: reviewId,
+    },
+  })
+    .then((respond) => {
+      res.send(respond);
+    })
+    .catch((err) => {
+      res.send(err);
+    });
+});
+
 app.get('/api/reviews/customer/:customer', (req, res) => {
   const customerId = req.params.customer;
   Customers.findAll({
