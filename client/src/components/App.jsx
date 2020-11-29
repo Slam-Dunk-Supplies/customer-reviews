@@ -88,7 +88,7 @@ class App extends React.Component {
     return (
       <div>
         <h3 className="heading">RATINGS & REVIEWS</h3>
-        <div className="container">
+        <div className="reviews-container">
           <div className="inner-container">
             {this.state.reviews.length > 0 && (
             <StarRatingSummary
