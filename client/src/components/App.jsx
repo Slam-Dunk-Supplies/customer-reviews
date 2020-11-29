@@ -1,11 +1,13 @@
-/* eslint-disable react/sort-comp */
-/* eslint-disable object-curly-newline */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import axios from 'axios';
+// import loadable from '@loadable/component';
 import StarRatingSummary from './StarRatingSummary.jsx';
 import RecommendSummary from './RecommendSummary.jsx';
 import Reviews from './Reviews.jsx';
+
+// const StarRatingSummary = loadable(() => import('./StarRatingSummary.jsx'));
+// const RecommendSummary = loadable(() => import('./RecommendSummary.jsx'));
+// const Reviews = loadable(() => import('./Reviews.jsx'));
 
 class App extends React.Component {
   constructor(props) {
@@ -44,7 +46,9 @@ class App extends React.Component {
   }
 
   countStarRating(reviews) {
-    const starsCount = { one_stars: 0, two_stars: 0, three_stars: 0, four_stars: 0, five_stars: 0 };
+    const starsCount = {
+      one_stars: 0, two_stars: 0, three_stars: 0, four_stars: 0, five_stars: 0,
+    };
     for (let i = 0; i < reviews.length; i++) {
       starsCount[reviews[i].star_rating]++;
     }

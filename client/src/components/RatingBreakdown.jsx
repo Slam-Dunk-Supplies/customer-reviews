@@ -1,7 +1,3 @@
-/* eslint-disable no-mixed-operators */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable guard-for-in */
 import React from 'react';
 import PropTypes from 'prop-types';
 

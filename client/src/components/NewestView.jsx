@@ -1,8 +1,10 @@
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import Stars from './StarScale.jsx';
+// import loadable from '@loadable/component';
+
+// const Stars = loadable(() => import('./StarScale.jsx'));
 
 class NewestView extends React.Component {
   constructor(props) {

@@ -1,9 +1,9 @@
-/* eslint-disable react/sort-comp */
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
 import NewestView from './NewestView.jsx';
+// import loadable from '@loadable/component';
+
+// const NewestView = loadable(() => import('./NewestView.jsx'));
 
 class Reviews extends React.Component {
   constructor(props) {

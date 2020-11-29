@@ -1,5 +1,3 @@
-/* eslint-disable object-shorthand */
-/* eslint-disable camelcase */
 const { Sequelize } = require('sequelize');
 const loginInfo = require('./mySQLpw.js');
 
@@ -77,7 +75,6 @@ Products.sync();
 Customers.sync();
 Reviews.sync();
 
-// eslint-disable-next-line func-names
 const getStarDistribution = function (product_id, star_rating) {
   return Reviews.findAll({
     where: { product_id: product_id, star_rating: star_rating },

@@ -3,10 +3,12 @@ const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const express = require('express');
+const compression = require('compression');
 
 const { Reviews, Customers } = require('../database/index.js');
 
 const app = express();
+app.use(compression());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
@@ -25,7 +27,6 @@ app.get('/api/reviews/:product_id', (req, res) => {
     ],
   })
     .then((data) => {
-      // I can count star distribution here and send together with data back to client
       res.send(data);
     })
     .catch((err) => {
